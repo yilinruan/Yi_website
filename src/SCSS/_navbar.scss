@@ -1,0 +1,152 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(black, 0.9);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 95%;
+
+    &--left {
+        display: flex;
+        margin-left: 3rem;
+        padding: 0 2rem;
+        &__anchor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+
+            &--logo {
+                font-size: 2.5rem;
+                margin-left: 0.5rem;
+            }
+            &--title {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &--right {
+        display: flex;
+        padding-right: 4rem;
+        font-weight: bold;
+
+        &__menuIcon {
+            display: none;
+
+            @include lg {
+                display: flex;
+                color: white;
+                font-size: 2.5rem;
+                margin-left: 0.5rem;
+            }
+        }
+
+        &__links {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 4rem;
+            text-decoration: none;
+            padding: 0.3rem;
+
+            &:hover {
+                background-color: rgba(212, 207, 207, 0.397);
+                border-radius: 0;
+            }
+        }
+
+        &__menu {
+            display: none;
+
+            @include lg {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                left: 0;
+                text-align: center;
+                width: 100%;
+                background-color: rgba(black, 0.9);
+                top: 5rem;
+                padding-bottom: 2rem;
+
+                -webkit-animation: slideIn 0.5s forwards;
+                -moz-animation: slideIn 0.5s forwards;
+                animation: slideIn 0.5s forwards;
+
+                @-webkit-keyframes slideIn {
+                    0% {
+                        transform: translateX(-900px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+                @-moz-keyframes slideIn {
+                    0% {
+                        transform: translateX(-900px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+                @keyframes slideIn {
+                    0% {
+                        transform: translateX(-900px);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                &--item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                    height: 6rem;
+                    // padding-top: 3rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: rgba(212, 207, 207, 0.397);
+                        border-radius: 0;
+                    }
+                }
+
+                &--icons {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 2rem;
+
+                    &__logo{
+                        color: white;
+                        font-size: 4rem;
+                        margin-left: 1.5rem;
+                        margin-right: 1.5rem;
+                        &:hover {
+                            transition: all 0.3s ease-out;
+                            color: $color-purple-light;
+                            transition: 250ms;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include lg {
+            &__links {
+                display: none;
+            }
+
+            &__linksButton {
+                display: none;
+            }
+        }
+    }
+}

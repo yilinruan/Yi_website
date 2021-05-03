@@ -1,0 +1,25 @@
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    background: url("../image/dark_blue_theme02.jpg") center /
+        cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    &-Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+  
+        &-Title {
+            padding-top: 10rem;
+            color: white;
+        }
+
+        &-Name {
+            color: yellow;
+        }
+    }
+
+}
