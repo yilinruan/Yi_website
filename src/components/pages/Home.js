@@ -56,25 +56,26 @@ export default function Home() {
                     <div className="home--section2__page">
                         <div className="home--section2__page--title">Programmer Skills</div>
 
-                        <div className="home--section2__page--language">
-                            <div className="home--section2__page--language__strong">Strong: Python, JavaScript, HTML, Css, Sass</div>
-                            <div className="home--section2__page--language__experience">Experience: Java, C#, Kotlin</div>
+                        <div className="home--section2__page--skill">
+                            <span className="home--section2__page--skill__set">Strong: Python, JavaScript, HTML, Css, Sass</span>
+                            <span className="home--section2__page--skill__set">Experience: Java, C#, Kotlin</span>
                         </div>
 
-                        <div className="home--section2__page--text">Database: MongoDB, MySQL</div>
-                        <div className="home--section2__page--text">Object-Oriented Design</div>
-                        <div className="home--section2__page--text">Agile Software Development</div>
-                        <div className="home--section2__page--text">Hardware and peripherals testing and debugging</div>
-                        <div className="home--section2__page--text">Familiar with linux/unix</div>
+                        <div className="home--section2__page--body" >
+                            <div className="home--section2__page--body__text">Database: MongoDB, MySQL</div>
+                            <div className="home--section2__page--body__text">Object-Oriented Design</div>
+                            <div className="home--section2__page--body__text">Agile Software Development</div>
+                            <div className="home--section2__page--body__text">Hardware and peripherals testing and debugging</div>
+                            <div className="home--section2__page--body__text">Familiar with linux/unix</div>
+                        </div>
 
                         <div className="home--section2__page--icons">
-
-                            <FaReact className="home--section2__page--icons__logo"/>
-                            <FaPython className="home--section2__page--icons__logo"/>
-                            <FaNodeJs className="home--section2__page--icons__logo"/>
-                            <DiMongodb className="home--section2__page--icons__logo"/>
-                            <SiMysql className="home--section2__page--icons__logo"/>
-                            <SiHtml5 className="home--section2__page--icons__logo"/>
+                            <FaReact className="home--section2__page--icons__logo" />
+                            <FaPython className="home--section2__page--icons__logo" />
+                            <FaNodeJs className="home--section2__page--icons__logo" />
+                            <DiMongodb className="home--section2__page--icons__logo" />
+                            <SiMysql className="home--section2__page--icons__logo" />
+                            <SiHtml5 className="home--section2__page--icons__logo" />
 
                         </div>
 
