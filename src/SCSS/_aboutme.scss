@@ -1,8 +1,7 @@
 .AboutMe {
     display: flex;
     flex-direction: column;
-    background: url("../image/dark_blue_theme02.jpg") center /
-        cover no-repeat;
+    background-image: -webkit-linear-gradient(180deg,black 10%, $color-blue-dark 20%, black 70%);
     width: 100vw;
     height: 100vh;
 

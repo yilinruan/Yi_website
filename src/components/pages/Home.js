@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react'
 import MetaData from '../layout/MetaData'
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiOutlineCaretDown } from 'react-icons/ai';
-import { FaAngleDoubleUp, FaReact, FaPython, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaPython, FaNodeJs } from 'react-icons/fa';
+import { RiArrowUpSFill } from 'react-icons/ri';
+
 import { DiMongodb } from 'react-icons/di';
 import { SiMysql, SiHtml5 } from 'react-icons/si';
 import { Link } from 'react-router-dom';
@@ -57,10 +59,11 @@ export default function Home() {
                         <div className="home--section2__page--title">Programmer Skills</div>
 
                         <div className="home--section2__page--skill">
-                            <span className="home--section2__page--skill__set">Strong: Python, JavaScript, HTML, Css, Sass</span>
-                            <span className="home--section2__page--skill__set">Experience: Java, C#, Kotlin</span>
+                            <div className="home--section2__page--skill__container">
+                                <span className="home--section2__page--skill__container--set">Strong: Python, JavaScript, HTML, Css, Sass</span>
+                                <span className="home--section2__page--skill__container--set">Experience: Java, Kotlin</span>
+                            </div>
                         </div>
-
                         <div className="home--section2__page--body" >
                             <div className="home--section2__page--body__text">Database: MongoDB, MySQL</div>
                             <div className="home--section2__page--body__text">Object-Oriented Design</div>
@@ -70,12 +73,14 @@ export default function Home() {
                         </div>
 
                         <div className="home--section2__page--icons">
-                            <FaReact className="home--section2__page--icons__logo" />
-                            <FaPython className="home--section2__page--icons__logo" />
-                            <FaNodeJs className="home--section2__page--icons__logo" />
-                            <DiMongodb className="home--section2__page--icons__logo" />
-                            <SiMysql className="home--section2__page--icons__logo" />
-                            <SiHtml5 className="home--section2__page--icons__logo" />
+                            <div className="home--section2__page--icons__container">
+                                <FaReact className="home--section2__page--icons__container--logo" />
+                                <FaPython className="home--section2__page--icons__container--logo" />
+                                <FaNodeJs className="home--section2__page--icons__container--logo" />
+                                <DiMongodb className="home--section2__page--icons__container--logo" />
+                                <SiMysql className="home--section2__page--icons__container--logo" />
+                                <SiHtml5 className="home--section2__page--icons__container--logo" />
+                            </div>
 
                         </div>
 
@@ -84,7 +89,7 @@ export default function Home() {
 
                     <div className="home--section2__bottem">
                         <a href='#up'>
-                            <FaAngleDoubleUp className="home--section2__bottem--previous_page" />
+                            <RiArrowUpSFill className="home--section2__bottem--previous_page" />
                         </a>
                     </div>
                 </div>
