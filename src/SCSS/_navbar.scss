@@ -2,11 +2,14 @@
     position: fixed;
     width: 100%;
     background-color: rgba(black, 0.9);
-    height: 5rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     opacity: 95%;
+    z-index: 10;
+
+
 
     &--left {
         display: flex;

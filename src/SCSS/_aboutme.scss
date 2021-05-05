@@ -1,24 +1,8 @@
-.AboutMe {
+.aboutme {
     display: flex;
     flex-direction: column;
-    background-image: -webkit-linear-gradient(180deg,black 10%, $color-blue-dark 20%, black 70%);
-    width: 100vw;
+    background-image: -webkit-linear-gradient(180deg,black, $color-blue-dark, black);
+    width: 100%;
     height: 100vh;
-
-    &-Header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-  
-        &-Title {
-            padding-top: 10rem;
-            color: white;
-        }
-
-        &-Name {
-            color: yellow;
-        }
-    }
 
 }
