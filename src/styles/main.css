@@ -9,7 +9,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: url("../image/dark_red_theme.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp2720313.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -90,7 +90,7 @@
   .home--section2 {
     height: 100vh;
     width: 100%;
-    background-image: -webkit-linear-gradient(180deg, #010116, #001a49, black 50%, #001a49, #010116);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../image/dark_red_theme.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -140,6 +140,9 @@
       flex-direction: column;
       height: 90%;
       padding-top: 5rem; }
+      @media (max-width: 992px) {
+        .home--section2__page {
+          padding-top: 8rem; } }
       .home--section2__page--title {
         height: 10%;
         display: flex;
@@ -450,16 +453,25 @@ body {
 .aboutme {
   display: flex;
   flex-direction: column;
-  background-image: -webkit-linear-gradient(180deg, black, #001a49, black);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../image/dark_red_theme.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100vh; }
+  @media (max-width: 992px) {
+    .aboutme {
+      height: 130vh; } }
 
 .projects {
   display: flex;
   flex-direction: column;
-  background-image: -webkit-linear-gradient(180deg, black 10%, #001a49 20%, black 70%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://wallpapercave.com/wp/wp3102487.jpg") center/cover no-repeat;
   width: 100%;
   height: 100vh; }
+  @media (max-width: 992px) {
+    .projects {
+      height: 130vh; } }
 
 .contacts {
   display: flex;

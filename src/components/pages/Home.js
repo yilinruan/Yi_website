@@ -54,7 +54,6 @@ export default function Home() {
 
                 <div className="home--section2" id='down'>
 
-                    {/* my skills */}
                     <div className="home--section2__page">
                         <div className="home--section2__page--title">Programmer Skills</div>
 

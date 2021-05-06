@@ -1,8 +1,15 @@
 .aboutme {
     display: flex;
     flex-direction: column;
-    background-image: -webkit-linear-gradient(180deg,black, $color-blue-dark, black);
+    // background-image: -webkit-linear-gradient(180deg,black, $color-blue-dark, black);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../image/dark_red_theme.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100vh;
 
+    @include lg {
+        height: 130vh;
+    }
 }
