@@ -9,7 +9,7 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp2720313.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp3544735.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -90,7 +90,7 @@
   .home--section2 {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("../image/dark_red_theme.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp7864836.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -139,7 +139,7 @@
       display: flex;
       flex-direction: column;
       height: 90%;
-      padding-top: 5rem; }
+      padding-top: 8rem; }
       @media (max-width: 992px) {
         .home--section2__page {
           padding-top: 8rem; } }
@@ -453,30 +453,280 @@ body {
 .aboutme {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../image/dark_red_theme.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(90deg, black, #001a49 5%, white 90%);
   width: 100%;
   height: 100vh; }
   @media (max-width: 992px) {
     .aboutme {
-      height: 130vh; } }
+      height: 130vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 15%; } }
+  .aboutme--container {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 45em;
+    width: 65rem; }
+    @media (max-width: 992px) {
+      .aboutme--container {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 80%; } }
+    .aboutme--container__left {
+      width: 50%; }
+      @media (max-width: 992px) {
+        .aboutme--container__left {
+          height: 50%;
+          width: 80%;
+          margin: 0 auto; } }
+      .aboutme--container__left--top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20%; }
+        .aboutme--container__left--top__protfolio {
+          margin: 0 auto;
+          font-size: 1.5rem;
+          font-weight: 700;
+          letter-spacing: 3px; }
+        .aboutme--container__left--top__sub_text {
+          margin: 0 auto;
+          font-size: 0.5rem;
+          letter-spacing: 2px; }
+      .aboutme--container__left--bottom {
+        height: 80%; }
+        .aboutme--container__left--bottom__img {
+          height: 100%;
+          width: 100%;
+          background-color: #aeaef0; }
+    .aboutme--container__right {
+      width: 50%; }
+      @media (max-width: 992px) {
+        .aboutme--container__right {
+          height: 50%;
+          width: 80%;
+          margin: 0 auto; } }
+      .aboutme--container__right--menu {
+        height: 30%; }
+        @media (max-width: 992px) {
+          .aboutme--container__right--menu {
+            height: 0%; } }
+      .aboutme--container__right--top {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        padding-left: 1rem;
+        padding-right: 1rem; }
+        @media (max-width: 992px) {
+          .aboutme--container__right--top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 60%; } }
+        .aboutme--container__right--top__title {
+          margin: 0 auto;
+          font-size: 1rem;
+          font-weight: 700;
+          padding-bottom: 1rem;
+          overflow-y: hidden;
+          overflow-x: hidden; }
+          @media (max-width: 992px) {
+            .aboutme--container__right--top__title {
+              font-size: 1.5rem; } }
+        .aboutme--container__right--top__text {
+          overflow-y: hidden;
+          overflow-x: hidden;
+          font-size: 0.7rem; }
+          @media (max-width: 992px) {
+            .aboutme--container__right--top__text {
+              font-size: 1rem; } }
+      .aboutme--container__right--bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30%; }
+        @media (max-width: 992px) {
+          .aboutme--container__right--bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 40%; } }
+        .aboutme--container__right--bottom__icons {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 0 auto;
+          width: 35%; }
+          .aboutme--container__right--bottom__icons--logo {
+            font-size: 2rem;
+            color: black; }
+        .aboutme--container__right--bottom__line {
+          margin: 0 auto;
+          width: 30%;
+          border-top: 0.2rem solid black; }
 
 .projects {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://wallpapercave.com/wp/wp3102487.jpg") center/cover no-repeat;
+  background-color: white;
+  position: relative;
+  background-image: -webkit-linear-gradient(180deg, black 10%, rgba(0, 26, 73, 0.8) 20%, black 70%);
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  padding: 10rem 5rem 5rem 5rem; }
   @media (max-width: 992px) {
     .projects {
       height: 130vh; } }
+  .projects--container {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%; }
+    @media (max-width: 992px) {
+      .projects--container {
+        grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) {
+      .projects--container {
+        grid-template-columns: 1fr; } }
+    .projects--container--product {
+      text-align: center;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      background-color: rgba(255, 255, 255, 0.1);
+      overflow-y: hidden;
+      overflow-x: hidden;
+      border: 1px solid rgba(255, 255, 0, 0.2); }
+      .projects--container--product__project {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding-top: 2rem; }
+        .projects--container--product__project--image1 {
+          height: 20rem;
+          width: 15rem;
+          margin: 0 auto;
+          background-image: url("../image/sodoku.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+        .projects--container--product__project--image2 {
+          height: 20rem;
+          width: 15rem;
+          margin: 0 auto;
+          background-image: url("../image/dietapp.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+        .projects--container--product__project--image3 {
+          height: 20rem;
+          width: 15rem;
+          margin: 0 auto;
+          background-image: url("../image/auto-bot.jpeg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+        .projects--container--product__project--image4 {
+          height: 20rem;
+          width: 25rem;
+          margin: 0 auto;
+          background-image: url("../image/yishop.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      .projects--container--product__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: left;
+        height: 40%;
+        padding: 1%;
+        overflow-y: hidden;
+        overflow-x: hidden; }
+        .projects--container--product__body--title {
+          display: flex;
+          flex-direction: column;
+          font-weight: 600;
+          text-align: left;
+          overflow-y: hidden;
+          overflow-x: hidden; }
+          .projects--container--product__body--title__name {
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: white;
+            text-decoration: none;
+            overflow-y: hidden;
+            overflow-x: hidden; }
+            .projects--container--product__body--title__name:hover {
+              text-decoration: none;
+              color: #fca421;
+              transition: all 0.1s; }
+            @media (max-width: 992px) {
+              .projects--container--product__body--title__name {
+                padding-bottom: 2rem; } }
+            @media (max-width: 768px) {
+              .projects--container--product__body--title__name {
+                padding-bottom: 3rem; } }
+        .projects--container--product__body--text {
+          font-size: 1rem;
+          padding-bottom: 1rem;
+          color: rgba(255, 255, 255, 0.6);
+          overflow-y: hidden;
+          overflow-x: hidden; }
+      .projects--container--product__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 10%; }
+        .projects--container--product__bottom--btn_area {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+          width: 50%;
+          margin: 0 auto;
+          text-decoration: none;
+          overflow-y: hidden;
+          overflow-x: hidden; }
+          .projects--container--product__bottom--btn_area__viewButton {
+            width: auto;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 1rem;
+            border: 1px #f7f7f7;
+            color: #f7f7f7;
+            background-color: #087772;
+            outline: none;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            transition: all 0.4s;
+            padding: 1%;
+            overflow-y: hidden;
+            overflow-x: hidden; }
+            .projects--container--product__bottom--btn_area__viewButton:hover {
+              color: #f9fbfc;
+              background-color: #aa55bb; }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../image/moon.jpg") center/cover no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp8958774.png");
   width: 100%;
   height: 100vh;
   padding-top: 15rem; }
@@ -533,7 +783,8 @@ body {
         border: white;
         border-radius: 0.5rem;
         padding-left: 1rem;
-        padding-right: 1rem; }
+        padding-right: 1rem;
+        padding-top: 1rem; }
         .contacts--container__input_field--form__text_area--paragraph:focus {
           outline: 2px solid #001a49; }
     .contacts--container__input_field--form__submit {

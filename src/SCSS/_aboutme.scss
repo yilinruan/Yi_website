@@ -1,15 +1,168 @@
 .aboutme {
     display: flex;
     flex-direction: column;
-    // background-image: -webkit-linear-gradient(180deg,black, $color-blue-dark, black);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../image/dark_red_theme.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    justify-content: center;
+    background-image: -webkit-linear-gradient(90 + deg, black, $color-blue-dark 5%, white 90%);
+
+    // background-image: -webkit-linear-gradient(180deg,black, $color-blue-dark 5%, white 90%);
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../image/dark_red_theme.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     width: 100%;
     height: 100vh;
 
     @include lg {
         height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 15%;
+    }
+
+    &--container {
+        display: flex;
+        margin: 0 auto;
+        background-color: rgba(black, 0.05);
+        height: 45em;
+        width: 65rem;
+        // margin-bottom: 10%;
+
+        @include lg {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            height: 70%;
+            width: 80%;
+        }
+
+        &__left {
+            width: 50%;
+
+            @include lg {
+                height: 50%;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            &--top {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 20%;
+
+
+                &__protfolio {
+                    margin: 0 auto;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: 3px;
+
+                }
+
+                &__sub_text {
+                    margin: 0 auto;
+                    font-size: 0.5rem;
+                    letter-spacing: 2px;
+                  
+                }
+            }
+
+            &--bottom {
+                height: 80%;
+
+                &__img {
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgb(174, 174, 240);
+                }
+            }
+        }
+
+        &__right {
+            width: 50%;
+
+            @include lg {
+                height: 50%;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            &--menu {
+                height: 30%;
+
+                @include lg {
+                    height: 0%;
+                }
+            }
+
+            &--top {
+                display: flex;
+                flex-direction: column;
+                height: 40%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                @include lg {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 60%;
+                }
+
+                &__title {
+                    margin: 0 auto;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    padding-bottom: 1rem;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    @include lg {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                &__text {
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    font-size: 0.7rem;
+
+                    @include lg {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            &--bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 30%;
+
+                @include lg {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 40%;
+                }
+                &__icons {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin: 0 auto;
+                    width: 35%;
+
+                    &--logo {
+                        font-size: 2rem;
+                        color: black;
+                    }
+                }
+
+                &__line {
+                    margin: 0 auto;
+                    width: 30%;
+                    border-top: 0.2rem solid black;
+                }
+            }
+        }
     }
 }

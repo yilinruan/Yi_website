@@ -31,7 +31,7 @@ export default function Navbar() {
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/">Home</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Aboutme">About</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Projects">Projects</NavLink>
-                <NavLink activeStyle={{ color: "#3b5998" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
+                <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
 
 
                 {click &&
@@ -45,7 +45,7 @@ export default function Navbar() {
                         <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__menu--item" exact to="/Projects">
                             Project
                         </NavLink>
-                        <NavLink activeStyle={{ color: "#3b5998" }} className="navbar--right__menu--item" exact to="/Contacts">
+                        <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__menu--item" exact to="/Contacts">
                             Contact
                         </NavLink>
 

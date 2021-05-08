@@ -1,14 +1,205 @@
 .projects {
     display: flex;
     flex-direction: column;
-    // background-image: -webkit-linear-gradient(180deg,black 10%, $color-blue-dark 20%, black 70%);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url("https://wallpapercave.com/wp/wp3102487.jpg") center / cover no-repeat;
+    background-color: white;
+    position: relative;
+    background-image: -webkit-linear-gradient(180deg, black 10%, rgba($color-blue-dark, 0.8) 20%, black 70%);
+
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp8958774.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
     width: 100%;
     height: 100vh;
+    padding: 10rem 5rem 5rem 5rem;
 
-    @include lg{
+    @include lg {
         height: 130vh;
     }
 
+    &--container {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 100%;
+
+        @include lg {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
+        &--product {
+            text-align: center;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            background-color: rgba(white, 0.1);
+            overflow-y: hidden;
+            overflow-x: hidden;
+            border: 1px solid rgba(yellow, 0.2);
+
+            &__project {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // background-color: yellow;
+                width: auto;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                padding-top: 2rem;
+                &--image1 {
+                    height: 20rem;
+                    width: 15rem;
+                    margin: 0 auto;
+                    background-image: url("../image/sodoku.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:contain;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                    // -ms-transform: rotate(3deg); /* IE 9 */
+                    // transform: rotate(3deg);
+                }
+
+                &--image2 {
+                    height: 20rem;
+                    width: 15rem;
+                    margin: 0 auto;
+                    background-image: url("../image/dietapp.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:contain;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                     // -ms-transform: rotate(3deg); /* IE 9 */
+                    // transform: rotate(3deg);
+                }
+
+                &--image3 {
+                    height: 20rem;
+                    width: 15rem;
+                    margin: 0 auto;
+                    background-image: url("../image/auto-bot.jpeg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:cover;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                     // -ms-transform: rotate(3deg); /* IE 9 */
+                    // transform: rotate(3deg);
+                }
+
+                &--image4 {
+                    height: 20rem;
+                    width: 25rem;
+                    margin: 0 auto;
+                    background-image: url("../image/yishop.jpg");
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    background-size:cover;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                     // -ms-transform: rotate(3deg); /* IE 9 */
+                    // transform: rotate(3deg);
+                }
+            }
+
+    
+
+            &__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                text-align: left;
+                height: 40%;
+                padding: 1%;
+                overflow-y: hidden;
+                overflow-x: hidden;
+
+                &--title {
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: 600;
+                    text-align: left;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    &__name {
+                        font-size: 1.5rem;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        color: white;
+                        text-decoration: none;
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: #fca421;
+                            transition: all 0.1s;
+                        }
+
+                        @include lg {
+                            padding-bottom: 2rem;
+                        }
+
+                        @include md {
+                            padding-bottom: 3rem;
+                        }
+                    }
+                }
+
+                &--text {
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                    color: rgba(white, 0.6);
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 10%;
+
+                &--btn_area {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    width: 50%;
+                    margin: 0 auto;
+                    text-decoration: none;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                    &__viewButton {
+                        width: auto;
+                        margin: 0 auto;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        border: 1px #f7f7f7;
+                        // border-radius: 0.5rem;
+                        color: #f7f7f7;
+                        background-color: #087772;
+                        outline: none;
+                        text-decoration: none;
+                        cursor: pointer;
+                        -webkit-appearance: none;
+                        transition: all 0.4s;
+                        padding: 1%;
+                        overflow-y: hidden;
+                        overflow-x: hidden;
+                        &:hover {
+                            color: #f9fbfc;
+                            background-color: #aa55bb;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

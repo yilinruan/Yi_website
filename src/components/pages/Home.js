@@ -42,7 +42,7 @@ export default function Home() {
                             </Link>
                         </div>
 
-                        <h1 className="home--section__page-text"> I am a junior frontend developer </h1>
+                        <h1 className="home--section__page-text"> I am a frontend developer </h1>
                     </div>
 
                     <div className="home--section__bottem" >
