@@ -96,7 +96,8 @@
     background-size: cover; }
     @media (max-width: 992px) {
       .home--section2 {
-        height: 130vh; } }
+        height: 131vh;
+        width: 100%; } }
     .home--section2__bottem {
       display: flex;
       flex-direction: column;
@@ -139,10 +140,12 @@
       display: flex;
       flex-direction: column;
       height: 90%;
-      padding-top: 8rem; }
+      padding-top: 8rem;
+      padding: 8%; }
       @media (max-width: 992px) {
         .home--section2__page {
-          padding-top: 8rem; } }
+          padding-top: 8rem;
+          padding: 20%; } }
       .home--section2__page--title {
         height: 10%;
         display: flex;
@@ -196,6 +199,9 @@
         height: 20%;
         width: 50%;
         padding-top: 2rem; }
+        @media (max-width: 992px) {
+          .home--section2__page--icons {
+            width: 100%; } }
         .home--section2__page--icons__container {
           display: flex;
           justify-content: space-between; }
@@ -637,7 +643,7 @@ body {
           background-image: url("../image/auto-bot.jpeg");
           background-repeat: no-repeat;
           background-position: center;
-          background-size: cover;
+          background-size: contain;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
         .projects--container--product__project--image4 {
           height: 20rem;
@@ -646,7 +652,7 @@ body {
           background-image: url("../image/yishop.jpg");
           background-repeat: no-repeat;
           background-position: center;
-          background-size: cover;
+          background-size: contain;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
       .projects--container--product__body {
         display: flex;

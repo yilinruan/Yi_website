@@ -12,7 +12,8 @@
         justify-content: center;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp3544735.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+            url("https://wallpapercave.com/wp/wp3544735.jpg");
 
         background-repeat: no-repeat;
         background-position: center;
@@ -21,7 +22,6 @@
         @include lg {
             height: 130vh;
         }
-
 
         &__bottem {
             display: flex;
@@ -131,12 +131,15 @@
         height: 100vh;
         width: 100%;
 
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp7864836.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+            url("https://wallpapercave.com/wp/wp7864836.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
         @include lg {
-            height: 130vh;
+            height: 131vh;
+            width: 100%;
         }
 
         &__bottem {
@@ -200,9 +203,11 @@
             flex-direction: column;
             height: 90%;
             padding-top: 8rem;
+            padding: 8%;
 
             @include lg {
                 padding-top: 8rem;
+                padding: 20%;
             }
 
             &--title {
@@ -270,6 +275,9 @@
                 height: 20%;
                 width: 50%;
                 padding-top: 2rem;
+                @include lg {
+                    width: 100%;
+                }
 
                 &__container {
                     display: flex;
