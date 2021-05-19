@@ -1,5 +1,56 @@
-.something {
-  text-decoration: none; }
+.effect_left {
+  animation: 1.5s slideInFromLeft; }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%); }
+  100% {
+    transform: translateX(0); } }
+
+.effect_right {
+  animation: 1.5s slideInFromRight; }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%); }
+  100% {
+    transform: translateX(0); } }
+
+.fadein {
+  animation: fading 2s; }
+
+@keyframes fading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.shake:hover {
+  animation: shake 1s; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
 
 .home {
   position: relative; }
@@ -27,32 +78,6 @@
         font-size: 2rem;
         color: #ffffff;
         cursor: pointer; }
-        .home--section__bottem--next_page:hover {
-          animation: shake 1s; }
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg); }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg); }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg); }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg); }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg); }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg); }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg); }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg); }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg); }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg); }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg); } }
     .home--section__page {
       display: flex;
       flex-direction: column;
@@ -63,7 +88,18 @@
         font-size: 2.5rem;
         font-weight: 700;
         color: white;
-        padding-bottom: 5rem; }
+        padding-bottom: 5rem;
+        cursor: pointer;
+        transition: 0.5s linear; }
+        .home--section__page-Title:hover span:nth-child(1) {
+          margin-right: 1rem; }
+        .home--section__page-Title:hover span:nth-child(2) {
+          margin-left: 1rem; }
+        .home--section__page-Title:hover span {
+          color: #fff;
+          text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5); }
+        .home--section__page-Title--effect {
+          transition: 0.5s linear; }
       .home--section__page-text {
         margin: 0 auto;
         font-size: 1.2rem;
@@ -110,32 +146,6 @@
         cursor: pointer;
         overflow-x: hidden;
         overflow-y: hidden; }
-        .home--section2__bottem--previous_page:hover {
-          animation: shake 1s; }
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg); }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg); }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg); }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg); }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg); }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg); }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg); }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg); }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg); }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg); }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg); } }
     .home--section2__page {
       display: flex;
       flex-direction: column;

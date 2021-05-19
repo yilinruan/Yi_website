@@ -1,20 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import { GoGistSecret } from 'react-icons/go';
 import { Link, NavLink } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
-export default function Navbar() {
-    let [click, setClick] = useState(false);
 
+function useComponentVisible() {
+    const [isComponentVisible, setIsComponentVisible] = useState(
+        false
+    );
+    const ref = useRef(null);
+
+    const handleHideDropdown = (event) => {
+        if (event.key === "Escape") {
+            setIsComponentVisible(false);
+        }
+    };
+
+    const handleClickOutside = event => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setIsComponentVisible(false);
+        }
+    };
+    useEffect(() => {
+        document.addEventListener("keydown", handleHideDropdown, true);
+        document.addEventListener("click", handleClickOutside, true);
+        return () => {
+            document.removeEventListener("keydown", handleHideDropdown, true);
+            document.removeEventListener("click", handleClickOutside, true);
+        };
+    });
+
+    return { ref, isComponentVisible, setIsComponentVisible };
+}
+
+
+export default function Navbar() {
+    const {
+        ref,
+        isComponentVisible,
+        setIsComponentVisible
+    } = useComponentVisible(true);
+
+    let [click, setClick] = useState(false);
 
     const handleClick = () => {
         setClick(!click)
     }
 
     return (
-        <div className="navbar">
+        <div className="navbar" ref={ref}>
 
             <div className="navbar--left">
                 <Link className="navbar--left__anchor" to="/">
@@ -25,6 +61,11 @@ export default function Navbar() {
                 </Link>
             </div>
 
+            {/* 
+            {isComponentVisible && (
+
+            )} */}
+
 
 
             <div className="navbar--right">
@@ -34,7 +75,7 @@ export default function Navbar() {
                 <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
 
 
-                {click &&
+                {click && isComponentVisible &&
                     (<div className="navbar--right__menu">
                         <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__menu--item" exact to="/">
                             Home
@@ -69,12 +110,22 @@ export default function Navbar() {
                 }
 
                 <div className="navbar--right__menuIcon" onClick={handleClick}>
-                    {click ? <FaTimes /> : <GiHamburgerMenu />}
+                    {/* {click ? (
+                        <FaTimes onClick={() => setIsComponentVisible(false)} />
+                    ) : (
+                        <GiHamburgerMenu onClick={() => setIsComponentVisible(true)} />
+                    )} */}
+
+                    {click ? (
+                        <FaTimes />
+                    ) : (
+                        <GiHamburgerMenu />
+                    )}
                 </div>
 
             </div>
 
- 
+
 
         </div>
     )
