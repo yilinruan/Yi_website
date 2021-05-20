@@ -108,7 +108,7 @@
       .home--section__page-grid-container {
         display: flex;
         justify-content: space-between;
-        width: 15rem;
+        width: 9rem;
         margin: 0 auto; }
         @media (max-width: 992px) {
           .home--section__page-grid-container {

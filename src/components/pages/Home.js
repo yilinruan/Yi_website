@@ -5,7 +5,6 @@ import { FaReact, FaPython, FaNodeJs } from 'react-icons/fa';
 import { RiArrowUpSFill } from 'react-icons/ri';
 import { DiMongodb } from 'react-icons/di';
 import { SiMysql, SiHtml5 } from 'react-icons/si';
-import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -32,23 +31,18 @@ export default function Home() {
                         </h1>
 
                         <div className="home--section__page-grid-container effect_right">
-                            <Link className="something" to='https://github.com/yilinruan'>
+                            <a href='https://github.com/yilinruan' className="something" >
                                 <div className="home--section__page-grid-container-item">
                                     {<AiFillGithub className="home--section__page-grid-container-item-icon" />}
                                 </div>
-                            </Link>
+                            </a>
 
-                            <Link className="something" to='https://www.linkedin.com/in/yilin-ruan-1a0302203/'>
+                            <a href='https://www.linkedin.com/in/yilin-ruan-1a0302203/' className="something">
                                 <div className="home--section__page-grid-container-item">
                                     {<AiFillLinkedin className="home--section__page-grid-container-item-icon" />}
                                 </div>
-                            </Link>
+                            </a>
 
-                            <Link className="something" to='x'>
-                                <div className="home--section__page-grid-container-item">
-                                    {<AiOutlineMail className="home--section__page-grid-container-item-icon" />}
-                                </div>
-                            </Link>
                         </div>
 
                         <h1 className="home--section__page-text effect_left"> I am a frontend developer </h1>
@@ -63,7 +57,7 @@ export default function Home() {
 
                 <div className="home--section2" id='down'>
 
-                    {click==="down" ? (
+                    {click === "down" ? (
                         <div className="home--section2__page">
                             <div className="home--section2__page--title effect_left">Programmer Skills</div>
 
