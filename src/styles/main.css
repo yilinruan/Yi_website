@@ -254,7 +254,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  height: 6rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -384,6 +384,7 @@ body {
         overflow-y: hidden; }
         .footer-container-row-about-title {
           padding-top: 1rem;
+          padding-bottom: 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -484,8 +485,8 @@ body {
     display: flex;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.05);
-    height: 45em;
-    width: 65rem; }
+    height: 60em;
+    width: 75rem; }
     @media (max-width: 992px) {
       .aboutme--container {
         display: flex;
@@ -506,12 +507,12 @@ body {
         height: 20%; }
         .aboutme--container__left--top__protfolio {
           margin: 0 auto;
-          font-size: 1.5rem;
+          font-size: 2rem;
           font-weight: 700;
           letter-spacing: 3px; }
         .aboutme--container__left--top__sub_text {
           margin: 0 auto;
-          font-size: 0.5rem;
+          font-size: 0.8rem;
           letter-spacing: 2px; }
       .aboutme--container__left--bottom {
         height: 80%; }
@@ -545,21 +546,23 @@ body {
             height: 60%; } }
         .aboutme--container__right--top__title {
           margin: 0 auto;
-          font-size: 1rem;
+          font-size: 1.5rem;
           font-weight: 700;
           padding-bottom: 1rem;
           overflow-y: hidden;
           overflow-x: hidden; }
           @media (max-width: 992px) {
             .aboutme--container__right--top__title {
-              font-size: 1.5rem; } }
+              font-size: 1.7rem; } }
         .aboutme--container__right--top__text {
           overflow-y: hidden;
           overflow-x: hidden;
-          font-size: 0.7rem; }
+          font-size: 1rem;
+          padding-left: 1rem;
+          padding-right: 1rem; }
           @media (max-width: 992px) {
             .aboutme--container__right--top__text {
-              font-size: 1rem; } }
+              font-size: 1.2rem; } }
       .aboutme--container__right--bottom {
         display: flex;
         flex-direction: column;
