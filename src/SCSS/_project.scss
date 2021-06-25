@@ -1,3 +1,14 @@
+.fade {
+    transition: opacity 1s ease-in;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn {
+    opacity: 1;
+}
+
 .projects {
     display: flex;
     flex-direction: column;

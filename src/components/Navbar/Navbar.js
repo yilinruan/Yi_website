@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import { GoGistSecret } from 'react-icons/go';
 import { Link, NavLink } from 'react-router-dom';
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 
 function useComponentVisible() {
@@ -59,7 +59,7 @@ export default function Navbar() {
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/">Home</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Aboutme">About</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Projects">Projects</NavLink>
-                <NavLink activeStyle={{ color: "#7FDBFF", backgroundColor: "#363636", borderRadius: "1rem"}} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
+                <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
 
                 <div className="navbar--right__menuIcon" >
                     {isComponentVisible ? (
@@ -88,10 +88,6 @@ export default function Navbar() {
                                     <a href='https://www.linkedin.com/in/yilin-ruan-1a0302203/'>
                                         <AiFillLinkedin className="navbar--right__menu--icons__logo" />
                                     </a>
-
-                                    {/* <a href='x'>
-                                        <AiOutlineMail className="navbar--right__menu--icons__logo" />
-                                    </a> */}
                                 </div>
                             </div>
                         </div>

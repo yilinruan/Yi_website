@@ -1,7 +1,33 @@
 @import "./_variables.scss";
 
 .effect_left {
-    animation: 1.5s slideInFromLeft;
+    animation: 2s slideInFromLefts;
+
+    @keyframes slideInFromLefts {
+        0% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.effect_left_out {
+    animation: 2s stopFromLeft;
+    @keyframes stopFromLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.effect_left_in {
+    animation: 2s slideInFromLeft;
+
     @keyframes slideInFromLeft {
         0% {
             transform: translateX(-50%);
@@ -13,7 +39,8 @@
 }
 
 .effect_right {
-    animation: 1.5s slideInFromRight;
+    animation: 2s slideInFromRight;
+
     @keyframes slideInFromRight {
         0% {
             transform: translateX(50%);
@@ -24,19 +51,47 @@
     }
 }
 
-.fadein{
-    animation: fading 2s;
-    @keyframes fading {
+.effect_right_out {
+    animation: 2s stopFromRight;
+    @keyframes stopFromRight {
         0% {
-            opacity: 0;
+            transform: translateX(0);
         }
         100% {
-            opacity: 1;
+            transform: translateX(0);
         }
     }
 }
 
-.shake{
+.effect_right_in {
+    animation: 2s slideInFromRight;
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.fade {
+    transition: opacity 1s ease-in;
+}
+
+.fade2 {
+    transition: opacity 3s ease-in;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn {
+    opacity: 1;
+}
+
+.shake {
     &:hover {
         animation: shake 1s;
     }
@@ -124,31 +179,26 @@
                 color: white;
                 padding-bottom: 5rem;
                 cursor: pointer;
-                transition: 0.5s linear;
 
                 &:hover span:nth-child(1) {
                     margin-right: 1rem;
+                    transition: 1.5s linear;
                 }
 
                 &:hover span:nth-child(2) {
                     margin-left: 1rem;
-                }
-
-                &:hover span {
-                    color: #fff;
-                    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
-                }
-
-                &--effect {
-                    transition: 0.5s linear;
+                    transition: 1.5s linear;
                 }
             }
 
             &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 margin: 0 auto;
-                font-size: 1.2rem;
-                font-weight: 2z00;
                 color: white;
+                margin-top: 1rem;
+                font-size: 1.5rem;
             }
 
             &-grid-container {

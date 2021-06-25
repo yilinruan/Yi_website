@@ -1,23 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 export default function AboutMe() {
 
+    useEffect(() => {
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.7
+        };
+
+        function observerCallback(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // fade in observed elements that are in view
+                    entry.target.classList.replace('fadeOut', 'fadeIn');
+                } else {
+                    // fade out observed elements that are not in view
+                    entry.target.classList.replace('fadeIn', 'fadeOut');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const fadeElms = document.querySelectorAll('.fade');
+        fadeElms.forEach(el => observer.observe(el));
+    }, [])
+
+
     return (
         <div className="aboutme">
 
-            <div className=""></div>
-
-            <div className="aboutme--container">
+            <div className="aboutme--container fade fadeOut">
 
                 <div className="aboutme--container__left">
 
                     <div className="aboutme--container__left--top">
                         <div className="aboutme--container__left--top__protfolio">MY PORTFOLIO</div>
                         <div className="aboutme--container__left--top__sub_text">A PROTFOLIOBOX 4 DEMO SITE</div>
-
-
                     </div>
 
                     <div className="aboutme--container__left--bottom">
@@ -25,25 +47,22 @@ export default function AboutMe() {
 
                     </div>
 
-
                 </div>
 
 
                 <div className="aboutme--container__right">
-
                     <div className="aboutme--container__right--menu"></div>
-
 
                     <div className="aboutme--container__right--top">
                         <div className="aboutme--container__right--top__title">ABOUT ME</div>
                         <div className="aboutme--container__right--top__text">
-                            I am a computer science major student that recently graduated from Cal State Los
-                            Angeles. Throughout my college, I had experienced many jobs and I had worked on
-                            different kinds of projects as well, however, most of the time my role is working
-                            with databases, algorithms, and backend servers. During the vacation, my friend
-                            asked me that if I am interested to work with him on his project to implement
-                            some fancy features to the website. I agreed on it and while I was working with him,
-                            I found that I am more interested to work as a frontend developer.
+                            I am a computer science student and I recently graduated from the University of California, Los Angeles.
+                            Throughout the university, I have experienced a lot of work and participated in different types of projects,
+                            but most of the time my role is to optimize SQL queries, manage databases, build algorithms, and build APIs for the backend servers.
+                            During the holidays, my friend invited me to learn how to build and deploy a website by utilizing JavaScript
+                            and also to add some fancy features and decorations to the website. After that, I started to learn React.js
+                            and other JavaScript frameworks to build the website. I feel that designing and building a website is not that bad,
+                            in fact, it is very interesting to work on it. So I want to be a web/front-end developer.
                         </div>
 
                         <br />
@@ -51,7 +70,6 @@ export default function AboutMe() {
                         <div className="aboutme--container__right--top__text">
                             If you want to hire me, just simply send me an email!
                         </div>
-
 
                     </div>
 
@@ -62,7 +80,7 @@ export default function AboutMe() {
                             <Link className="aboutme--container__right--bottom__icons--logo" to="#"><FaLinkedin /></Link>
                         </div>
 
-                        <div className="aboutme--container__right--bottom__line"/>
+                        <div className="aboutme--container__right--bottom__line" />
 
                     </div>
 
