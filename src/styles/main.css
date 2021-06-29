@@ -56,7 +56,10 @@
   transition: opacity 1s ease-in; }
 
 .fade2 {
-  transition: opacity 3s ease-in; }
+  transition: opacity 1.5s ease-in; }
+
+.fade3 {
+  transition: opacity 2s ease-in; }
 
 .fadeOut {
   opacity: 0; }
@@ -99,19 +102,19 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp3544735.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-color: black;
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; }
     @media (max-width: 992px) {
       .home--section {
-        height: 130vh; } }
+        background-size: 100% 100%; } }
     .home--section__bottem {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       text-align: center;
-      height: 10%;
+      height: 5%;
       padding-bottom: 1rem; }
       .home--section__bottem--next_page {
         font-size: 2rem;
@@ -121,20 +124,27 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 90%; }
+      height: 95%; }
       .home--section__page-Title {
         margin: 0 auto;
         font-size: 2.5rem;
         font-weight: 700;
         color: white;
         padding-bottom: 5rem;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative; }
+        .home--section__page-Title span:nth-child(1) {
+          margin-right: 0rem;
+          transition: 0.4s linear; }
+        .home--section__page-Title span:nth-child(2) {
+          margin-left: 0rem;
+          transition: 0.4s linear; }
         .home--section__page-Title:hover span:nth-child(1) {
-          margin-right: 1rem;
-          transition: 1.5s linear; }
+          margin-right: 0.7rem;
+          transition: 0.4s linear; }
         .home--section__page-Title:hover span:nth-child(2) {
-          margin-left: 1rem;
-          transition: 1.5s linear; }
+          margin-left: 0.7rem;
+          transition: 0.4s linear; }
       .home--section__page-text {
         display: flex;
         flex-direction: column;
@@ -164,20 +174,17 @@
   .home--section2 {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp7864836.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    opacity: 0.8;
+    background: linear-gradient(to bottom, #6e529d 0%, #d97b93 100%); }
     @media (max-width: 992px) {
       .home--section2 {
-        height: 131vh;
         width: 100%; } }
     .home--section2__bottem {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       text-align: center;
-      height: 10%; }
+      height: 5%; }
       .home--section2__bottem--previous_page {
         font-size: 3rem;
         color: #ffffff;
@@ -187,7 +194,7 @@
     .home--section2__page {
       display: flex;
       flex-direction: column;
-      height: 90%;
+      height: 95%;
       padding-top: 8rem;
       padding: 8%; }
       @media (max-width: 992px) {
@@ -268,7 +275,6 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  min-width: 490px;
   height: -webkit-fill-available; }
   @media (max-width: 992px) {
     html {
@@ -506,7 +512,7 @@ body {
             transition: 250ms; }
 
 .fade {
-  transition: opacity 1s ease-in; }
+  transition: opacity 0.5s ease-in; }
 
 .fadeOut {
   opacity: 0; }
@@ -523,11 +529,9 @@ body {
   height: 100vh; }
   @media (max-width: 992px) {
     .aboutme {
-      height: 130vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-bottom: 15%; } }
+      justify-content: center; } }
   .aboutme--container {
     display: flex;
     margin: 0 auto;
@@ -538,7 +542,7 @@ body {
       .aboutme--container {
         display: flex;
         flex-direction: column;
-        height: 70%;
+        height: 85%;
         width: 80%; } }
     .aboutme--container__left {
       width: 50%; }
@@ -590,7 +594,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 60%; } }
+            height: 80%; } }
         .aboutme--container__right--top__title {
           margin: 0 auto;
           font-size: 1.5rem;
@@ -620,7 +624,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            height: 40%; } }
+            height: 20%; } }
         .aboutme--container__right--bottom__icons {
           display: flex;
           justify-content: space-evenly;
@@ -634,21 +638,21 @@ body {
           width: 30%;
           border-top: 0.2rem solid black; }
 
-.fade {
-  transition: opacity 1s ease-in; }
+.fadein {
+  animation: fading 2s; }
 
-.fadeOut {
-  opacity: 0; }
-
-.fadeIn {
-  opacity: 1; }
+@keyframes fading {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .projects {
   display: flex;
   flex-direction: column;
   background-color: white;
   position: relative;
-  background-image: -webkit-linear-gradient(180deg, black 10%, rgba(0, 26, 73, 0.8) 20%, black 70%);
+  background: linear-gradient(to bottom, #6e529d 0%, #d97b93 100%);
   width: 100%;
   height: 100vh;
   padding: 10rem 5rem 5rem 5rem; }
@@ -747,10 +751,6 @@ body {
             text-decoration: none;
             overflow-y: hidden;
             overflow-x: hidden; }
-            .projects--container--product__body--title__name:hover {
-              text-decoration: none;
-              color: #fca421;
-              transition: all 0.1s; }
             @media (max-width: 992px) {
               .projects--container--product__body--title__name {
                 padding-bottom: 2rem; } }
@@ -760,7 +760,7 @@ body {
         .projects--container--product__body--text {
           font-size: 1rem;
           padding-bottom: 1rem;
-          color: rgba(255, 255, 255, 0.6);
+          color: rgba(255, 255, 255, 0.9);
           overflow-y: hidden;
           overflow-x: hidden; }
       .projects--container--product__bottom {
@@ -801,19 +801,20 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp8958774.png");
+  background: linear-gradient(to bottom, #6e529d 0%, #d97b93 100%);
   width: 100%;
   height: 100vh;
   padding-top: 15rem; }
   @media (max-width: 992px) {
     .contacts {
-      height: 130vh;
-      padding-top: 15rem; } }
+      background-size: 100% 100%; } }
   .contacts--container {
     display: flex;
     flex-direction: column;
     height: 48rem;
     width: 50rem;
+    min-width: 35rem;
+    max-width: 50rem;
     margin: 0 auto;
     border: 1px solid rgba(255, 255, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.6);
@@ -821,6 +822,9 @@ body {
     padding-top: 2rem;
     padding-left: 3.5rem;
     padding-right: 3.5rem; }
+    @media (max-width: 596px) {
+      .contacts--container {
+        width: 85%; } }
     .contacts--container__title {
       font-size: 1.8rem;
       font-weight: 600;

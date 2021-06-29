@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
 
             <div className="navbar--right">
-                <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/">Home</NavLink>
+                <NavLink  activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/">Home</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Aboutme">About</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Projects">Projects</NavLink>
                 <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
@@ -66,7 +66,7 @@ export default function Navbar() {
                         <div>
                             <FaTimes onClick={() => setIsComponentVisible(false)} />
 
-                            <div className="navbar--right__menu">
+                            <div className="navbar--right__menu" onClick={() => setIsComponentVisible(false)}>
                                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__menu--item" exact to="/">
                                     Home
                                 </NavLink>

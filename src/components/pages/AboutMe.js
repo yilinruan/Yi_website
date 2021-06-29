@@ -56,11 +56,11 @@ export default function AboutMe() {
                     <div className="aboutme--container__right--top">
                         <div className="aboutme--container__right--top__title">ABOUT ME</div>
                         <div className="aboutme--container__right--top__text">
-                            I am a computer science student and I recently graduated from the University of California, Los Angeles.
+                            I am a computer science student and I graduated from the California State University of Los Angeles.
                             Throughout the university, I have experienced a lot of work and participated in different types of projects,
                             but most of the time my role is to optimize SQL queries, manage databases, build algorithms, and build APIs for the backend servers.
                             During the holidays, my friend invited me to learn how to build and deploy a website by utilizing JavaScript
-                            and also to add some fancy features and decorations to the website. After that, I started to learn React.js
+                            and also to Implementing some fancy features and decorations to the website. After that, I started to learn React.js
                             and other JavaScript frameworks to build the website. I feel that designing and building a website is not that bad,
                             in fact, it is very interesting to work on it. So I want to be a web/front-end developer.
                         </div>

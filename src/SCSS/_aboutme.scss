@@ -1,5 +1,5 @@
 .fade {
-    transition: opacity 1s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 .fadeOut {
@@ -24,11 +24,10 @@
     height: 100vh;
 
     @include lg {
-        height: 130vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 15%;
+        // padding-bottom: 15%;
     }
 
     &--container {
@@ -42,8 +41,7 @@
         @include lg {
             display: flex;
             flex-direction: column;
-            // justify-content: center;
-            height: 70%;
+            height: 85%;
             width: 80%;
         }
 
@@ -118,7 +116,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    height: 60%;
+                    height: 80%;
                 }
 
                 &__title {
@@ -156,7 +154,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-evenly;
-                    height: 40%;
+                    height: 20%;
                 }
                 &__icons {
                     display: flex;

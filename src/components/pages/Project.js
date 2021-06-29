@@ -1,30 +1,6 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 export default function Projects() {
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.7
-        };
-
-        function observerCallback(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // fade in observed elements that are in view
-                    entry.target.classList.replace('fadeOut', 'fadeIn');
-                } else {
-                    // fade out observed elements that are not in view
-                    entry.target.classList.replace('fadeIn', 'fadeOut');
-                }
-            });
-        }
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-        const fadeElms = document.querySelectorAll('.fade');
-        fadeElms.forEach(el => observer.observe(el));
-    }, [])
 
     const projects = [
         {
@@ -68,7 +44,7 @@ export default function Projects() {
     return (
         <div className="projects">
 
-            <div className="projects--container fade fadeOut">
+            <div className="projects--container fadein">
 
                 {projects.map(project => (
 

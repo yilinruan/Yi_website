@@ -1,12 +1,14 @@
-.fade {
-    transition: opacity 1s ease-in;
-}
 
-.fadeOut {
-    opacity: 0;
-}
-.fadeIn {
-    opacity: 1;
+.fadein{
+    animation: fading 2s;
+    @keyframes fading {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 .projects {
@@ -14,8 +16,9 @@
     flex-direction: column;
     background-color: white;
     position: relative;
-    background-image: -webkit-linear-gradient(180deg, black 10%, rgba($color-blue-dark, 0.8) 20%, black 70%);
+    // background-image: -webkit-linear-gradient(180deg, black 10%, rgba($color-blue-dark, 0.8) 20%, black 70%);
 
+    background: linear-gradient(to bottom, #6e529d 0%,#d97b93 100%);
     // background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://wallpapercave.com/wp/wp8958774.png");
     // background-repeat: no-repeat;
     // background-position: center;
@@ -146,12 +149,6 @@
                         overflow-y: hidden;
                         overflow-x: hidden;
 
-                        &:hover {
-                            text-decoration: none;
-                            color: #fca421;
-                            transition: all 0.1s;
-                        }
-
                         @include lg {
                             padding-bottom: 2rem;
                         }
@@ -165,7 +162,7 @@
                 &--text {
                     font-size: 1rem;
                     padding-bottom: 1rem;
-                    color: rgba(white, 0.6);
+                    color: rgba(white, 0.9);
                     overflow-y: hidden;
                     overflow-x: hidden;
                 }

@@ -54,7 +54,7 @@ export default function Home() {
 
         const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-        const fadeElms = document.querySelectorAll('.fade, .fade2, .effect_right, .effect_left');
+        const fadeElms = document.querySelectorAll('.fade, .fade2, .fade3, .effect_right, .effect_left');
         fadeElms.forEach(el => observer.observe(el));
     }, []);
 
@@ -67,7 +67,7 @@ export default function Home() {
 
                 <div className="home--section" id='page1'>
                     <div className="home--section__page">
-                        <h1 className="home--section__page-Title fade fadeOut">
+                        <h1 className="home--section__page-Title fade fadeOut ">
                             <span className="home--section__page-Title--effect">Hi,</span> I'm <span className="home--section__page-Title--effect">YiLin Ruan</span>
                         </h1>
 
@@ -100,15 +100,15 @@ export default function Home() {
 
 
                     <div className="home--section2__page">
-                        <div className="home--section2__page--title effect_left effect_left_out">Programmer Skills</div>
+                        <div className="home--section2__page--title fade fadeOut">Programmer Skills</div>
 
-                        <div className="home--section2__page--skill effect_right effect_right_out">
+                        <div className="home--section2__page--skill fade fadeOut">
                             <div className="home--section2__page--skill__container">
                                 <span className="home--section2__page--skill__container--set ">Strong: Python, JavaScript, HTML, Css, Sass</span>
                                 <span className="home--section2__page--skill__container--set">Experience: Java, Kotlin</span>
                             </div>
                         </div>
-                        <div className="home--section2__page--body fade fadeOut" >
+                        <div className="home--section2__page--body fade2 fadeOut" >
                             <div className="home--section2__page--body__text ">Database: MongoDB, MySQL</div>
                             <div className="home--section2__page--body__text ">Object-Oriented Design</div>
                             <div className="home--section2__page--body__text ">Agile Software Development</div>
@@ -116,7 +116,7 @@ export default function Home() {
                             <div className="home--section2__page--body__text ">Familiar with linux/unix</div>
                         </div>
 
-                        <div className="home--section2__page--icons fade2 fadeOut">
+                        <div className="home--section2__page--icons fade3 fadeOut">
                             <div className="home--section2__page--icons__container">
                                 <FaReact className="home--section2__page--icons__container--logo" />
                                 <FaPython className="home--section2__page--icons__container--logo" />
