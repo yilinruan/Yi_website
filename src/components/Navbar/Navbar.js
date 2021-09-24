@@ -51,6 +51,9 @@ export default function Navbar() {
                     <div className="navbar--left__anchor--title">
                         Yilin Ruan
                     </div>
+                    <div className="navbar--left__anchor--title">
+                        Yilin Ruan XD
+                    </div>
                     <GoGistSecret className="navbar--left__anchor--logo" />
                 </Link>
             </div>
@@ -60,6 +63,7 @@ export default function Navbar() {
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Aboutme">About</NavLink>
                 <NavLink activeStyle={{ color: "#ffbbee" }} className="navbar--right__links" exact to="/Projects">Projects</NavLink>
                 <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Contacts">Contact</NavLink>
+                <NavLink activeStyle={{ color: "#7FDBFF" }} className="navbar--right__links" exact to="/Hello">Hello</NavLink>
 
                 <div className="navbar--right__menuIcon" >
                     {isComponentVisible ? (
