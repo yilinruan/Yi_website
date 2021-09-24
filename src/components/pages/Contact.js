@@ -8,7 +8,7 @@ export default function Contacts() {
 
             <div className='contacts--container'>
                 <div className='contacts--container__title' >
-                    GET IN TOUCH WITH ME
+                    DONT INVITE ME
                 </div>
 
                 <div className='contacts--container__input_field'>
