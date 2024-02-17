@@ -86,7 +86,7 @@ export default function Home() {
 
                         </div>
 
-                        <h1 className="home--section__page-text effect_left effect_left_out"> I am a web developer </h1>
+                        <h1 className="home--section__page-text effect_left effect_left_out"> I am a Software Engineer</h1>
                     </div>
 
                     <div className="home--section__bottem" >
@@ -102,17 +102,13 @@ export default function Home() {
                     <div className="home--section2__page">
                         <div className="home--section2__page--title fade fadeOut">Programmer Skills</div>
 
-                        <div className="home--section2__page--skill fade fadeOut">
-                            <div className="home--section2__page--skill__container">
-                                <span className="home--section2__page--skill__container--set ">Strong: Python, JavaScript, HTML, Css, Sass</span>
-                                <span className="home--section2__page--skill__container--set">Experience: Java, Kotlin</span>
-                            </div>
-                        </div>
                         <div className="home--section2__page--body fade2 fadeOut" >
+                            <div className="home--section2__page--body__text ">Strong: TypeScript, JavaScript, Nest.js, Node.js, .NET, React.js, Python, HTML, CSS, Sass </div>
+                            <div className="home--section2__page--body__text ">Experience: Java, Kotlin</div>
+                            <div className="home--section2__page--body__text ">Tools and Technologies: Express.js, Redux, REST Apis, Jira, jQuery, Django, BeautifulSoup </div>
                             <div className="home--section2__page--body__text ">Database: MongoDB, MySQL</div>
                             <div className="home--section2__page--body__text ">Object-Oriented Design</div>
                             <div className="home--section2__page--body__text ">Agile Software Development</div>
-                            <div className="home--section2__page--body__text ">Hardware and peripherals testing and debugging</div>
                             <div className="home--section2__page--body__text ">Familiar with linux/unix</div>
                         </div>
 

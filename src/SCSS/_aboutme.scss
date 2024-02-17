@@ -34,8 +34,8 @@
         display: flex;
         margin: 0 auto;
         background-color: rgba(black, 0.05);
-        height: 60em;
-        width: 75rem;
+        height: 70%;
+        width: 80%;
         // margin-bottom: 10%;
 
         @include lg {
@@ -46,7 +46,7 @@
         }
 
         &__left {
-            width: 50%;
+            width: 40%;
 
             @include lg {
                 height: 50%;
@@ -58,7 +58,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                height: 20%;
+                height: 15%;
 
 
                 &__protfolio {
@@ -89,7 +89,7 @@
         }
 
         &__right {
-            width: 50%;
+            width: 60%;
 
             @include lg {
                 height: 50%;
@@ -98,7 +98,7 @@
             }
 
             &--menu {
-                height: 30%;
+                height: 15%;
 
                 @include lg {
                     height: 0%;
@@ -108,7 +108,7 @@
             &--top {
                 display: flex;
                 flex-direction: column;
-                height: 40%;
+                height: 70%;
                 padding-left: 1rem;
                 padding-right: 1rem;
 
@@ -121,20 +121,20 @@
 
                 &__title {
                     margin: 0 auto;
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                     font-weight: 700;
                     padding-bottom: 1rem;
                     overflow-y: hidden;
                     overflow-x: hidden;
                     @include lg {
-                        font-size: 1.7rem;
+                        font-size: 3rem;
                     }
                 }
 
                 &__text {
                     overflow-y: hidden;
                     overflow-x: hidden;
-                    font-size: 1rem;
+                    font-size: 1.4rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
 
@@ -148,7 +148,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                height: 30%;
+                height: 15%;
 
                 @include lg {
                     display: flex;

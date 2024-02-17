@@ -7,24 +7,25 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
-    "node-sass": "^5.0.0",
     "npm-watch": "^0.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.1.0",
+    "react-icons": "^4.12.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "sass": "^1.32.12",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.70.0",
+    "tar": "^6.2.0",
     "watch": "^1.0.2",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "webpack": "^5.90.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch src/SCSS/main.scss -o src/styles",
+    "scss": "sass --watch src/SCSS/main.scss:src/styles/main.css",
     "vip": "concurrently --kill-others \"npm start\" \"npm run scss\"",
     "heroku-postbuild": "npm install && npm run build"
   },
@@ -45,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "webpack-dev-server": "^4.15.1"
   }
 }

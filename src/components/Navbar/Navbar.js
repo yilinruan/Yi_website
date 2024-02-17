@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
-import { GoGistSecret } from 'react-icons/go';
+import { FaUserSecret } from "react-icons/fa6";
 import { Link, NavLink } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
@@ -51,7 +51,7 @@ export default function Navbar() {
                     <div className="navbar--left__anchor--title">
                         Yilin Ruan
                     </div>
-                    <GoGistSecret className="navbar--left__anchor--logo" />
+                    <FaUserSecret className="navbar--left__anchor--logo" />
                 </Link>
             </div>
 
