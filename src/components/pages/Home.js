@@ -90,8 +90,8 @@ export default function Home() {
                     </div>
 
                     <div className="home--section__bottem" >
-                        <div id='btnDown'>
-                            <AiOutlineCaretDown className="home--section__bottem--next_page shake" />
+                        <div id='btnDown' className='home--section__bottem--area'>
+                            <AiOutlineCaretDown className="home--section__bottem--area__next-page shake" />
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ export default function Home() {
 
 
                     <div className="home--section2__bottem">
-                        <div id='btnUp'>
+                        <div id='btnUp' className="home--section2__bottem--area__previous-page">
                             <RiArrowUpSFill className="home--section2__bottem--previous_page shake" />
                         </div>
                     </div>

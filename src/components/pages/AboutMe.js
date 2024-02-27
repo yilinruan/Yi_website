@@ -60,18 +60,7 @@ export default function AboutMe() {
                         record of success in contributing to the development and enhancement of various 
                         web applications. Over the years, I've had the opportunity to work with cross-functional 
                         teams, collaborating with UX/UI designers and fellow developers to create seamless and 
-                        efficient software solutions. In my most recent role at Evolent, where I served as a 
-                        Software Developer from July 2021 to February 2024, I played a key role in integrating 
-                        front-end features with backend functionalities. I focused on enhancing security measures 
-                        by implementing a multi-factor authentication login feature, contributing to the safeguarding 
-                        of sensitive healthcare information. Additionally, I improved search functionality by 
-                        implementing a queue filter feature using jQuery and Bootstrap 5 styles, resulting in 
-                        more efficient retrieval of healthcare data. I take pride in my proactive approach to identifying 
-                        and resolving production issues, ensuring the continuous and smooth operation of websites. 
-                        My commitment to quality extends to designing and developing a new application using TypeScript, 
-                        Nest.js, and Redux, aiming for modern and efficient development processes. I also contributed 
-                        significantly to the development of a proprietary common library for standardized UI components 
-                        in React applications, promoting consistency and efficiency across diverse projects.
+                        efficient software solutions. 
                         </div>
 
                         <br />

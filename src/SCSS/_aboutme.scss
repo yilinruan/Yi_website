@@ -28,6 +28,7 @@
         flex-direction: column;
         justify-content: center;
         // padding-bottom: 15%;
+         padding-top: 3rem;
     }
 
     &--container {
@@ -59,6 +60,7 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 height: 15%;
+
                 @include lg {
                     height: 50%;
                 }
@@ -68,14 +70,24 @@
                     font-size: 2rem;
                     font-weight: 700;
                     letter-spacing: 3px;
-
+                    @include lg {
+                        height: auto;
+                        width: auto;
+                        font-size: 1.5rem;
+                        overflow: hidden !important;
+                    }
                 }
 
                 &__sub_text {
                     margin: 0 auto;
                     font-size: 0.8rem;
                     letter-spacing: 2px;
-                  
+                    @include lg {
+                        height: auto;
+                        width: auto;
+                        font-size: 0.5rem;
+                        overflow: hidden !important;
+                    }
                 }
             }
 
@@ -105,7 +117,7 @@
 
             @include lg {
                 height: 90%;
-                width: 80%;
+                width: 85%;
                 margin: 0 auto;
             }
 
@@ -123,7 +135,6 @@
                 height: 70%;
                 padding-left: 1rem;
                 padding-right: 1rem;
-                padding-top: 5rem;
 
                 @include lg {
                     display: flex;
@@ -134,25 +145,29 @@
 
                 &__title {
                     margin: 0 auto;
-                    font-size: 1.7rem;
+                    font-size: 2rem;
                     font-weight: 700;
                     padding-bottom: 1rem;
                     overflow-y: hidden;
                     overflow-x: hidden;
                     @include lg {
-                        font-size: 2rem;
+                        height: auto;
+                        width: auto;
+                        font-size: 1.5rem;
                     }
                 }
 
                 &__text {
                     overflow-y: hidden;
                     overflow-x: hidden;
-                    font-size: 1.4rem;
+                    font-size: 1.7rem;
                     padding-left: 1rem;
                     padding-right: 1rem;
+                    height: auto;
+                    width: auto;
 
                     @include lg {
-                        font-size: 1.7rem;
+                        font-size: 0.8rem;
                     }
                 }
             }
