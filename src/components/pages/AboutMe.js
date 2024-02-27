@@ -56,18 +56,17 @@ export default function AboutMe() {
                     <div className="aboutme--container__right--top">
                         <div className="aboutme--container__right--top__title">ABOUT ME</div>
                         <div className="aboutme--container__right--top__text">
-                        Hello! I'm a dedicated and results-driven software developer with a proven track 
-                        record of success in contributing to the development and enhancement of various 
-                        web applications. Over the years, I've had the opportunity to work with cross-functional 
-                        teams, collaborating with UX/UI designers and fellow developers to create seamless and 
-                        efficient software solutions. 
-                        </div>
-
-                        <br />
-
-                        <div className="aboutme--container__right--top__text">
-                        With a passion for staying at the forefront of technology and a commitment to delivering high-quality 
-                        solutions, I look forward to leveraging my skills and experience in future projects and collaborations.
+                            <div>Hello! I'm a dedicated and results-driven software developer with a proven track 
+                            record of success in contributing to the development and enhancement of various 
+                            web applications. Over the years, I've had the opportunity to work with cross-functional 
+                            teams, collaborating with UX/UI designers and fellow developers to create seamless and 
+                            efficient software solutions. 
+                            </div>
+                            <br />
+                            <div>
+                            With a passion for staying at the forefront of technology and a commitment to delivering high-quality 
+                            solutions, I look forward to leveraging my skills and experience in future projects and collaborations.
+                            </div>
                         </div>
 
                     </div>
